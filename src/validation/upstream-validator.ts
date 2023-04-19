@@ -172,4 +172,10 @@ export class UpstreamValidator {
 
     return { status: 'success', message: message.join(' ') };
   }
+
+  // | commit | upstream |
+  // |---|---|
+  // | https://github.com/redhat-plumbers/systemd-rhel9/commit/d39d83f6a91edc81cec7024fd6e09db767306f1e - journal-def: fix type of signature to match the actual field in the He ... | https://github.com/systemd/systemd/commit/6fe167d0a77f72086b457125fad6931ca02a4baf </br> https://github.com/systemd/systemd-stable/commit/6fe167d0a77f72086b457125fad6931ca02a4baf |
+  // https://github.com/actions-private-playground/systemd-rhel9/pull/14#issuecomment-1514805036
+  // TODO: also add some note under line what is expected?
 }
